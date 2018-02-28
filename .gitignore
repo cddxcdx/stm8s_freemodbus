@@ -1,0 +1,11 @@
+*.lst
+*.rel
+*.sym
+*.rst
+*.ihx
+*.lk
+*.map
+*.asm
+*~
+Debug/*
+Release/*
