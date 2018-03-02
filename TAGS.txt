@@ -203,6 +203,8 @@ AWU_Timebase_TypeDef	libraries\stm8s_stdperiph_driver\inc\stm8s_awu.h	64;"	typed
 AWU_TypeDef	libraries\stm8s_stdperiph_driver\inc\stm8s.h	441;"	typedef	typeref:struct:AWU_struct
 AWU_struct	libraries\stm8s_stdperiph_driver\inc\stm8s.h	435;"	struct
 AffBit	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2792;"	macro
+Alarmlight_Driver	main.c	138;"	function	signature:(uint16_t* bufaddr, uint16_t nbufs)
+Alarmlight_Driver	main.c	41;"	prototype	file:	signature:(uint16_t* bufaddr, uint16_t nbufs)
 BEEP	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2612;"	macro
 BEEP_BaseAddress	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2572;"	macro
 BEEP_CALIBRATION_DEFAULT	libraries\stm8s_stdperiph_driver\inc\stm8s_beep.h	61;"	macro
@@ -218,8 +220,10 @@ BEEP_FREQUENCY_4KHZ	libraries\stm8s_stdperiph_driver\inc\stm8s_beep.h	48;"	enume
 BEEP_Frequency_TypeDef	libraries\stm8s_stdperiph_driver\inc\stm8s_beep.h	49;"	typedef	typeref:enum:__anon35
 BEEP_Init	libraries\stm8s_stdperiph_driver\inc\stm8s_beep.h	107;"	prototype	signature:(BEEP_Frequency_TypeDef BEEP_Frequency)
 BEEP_LSICalibrationConfig	libraries\stm8s_stdperiph_driver\inc\stm8s_beep.h	109;"	prototype	signature:(uint32_t LSIFreqHz)
+BEEP_PIN	main.c	56;"	macro	file:
 BEEP_TypeDef	libraries\stm8s_stdperiph_driver\inc\stm8s.h	479;"	typedef	typeref:struct:BEEP_struct
 BEEP_struct	libraries\stm8s_stdperiph_driver\inc\stm8s.h	475;"	struct
+BITS_UCHAR	modbus\functions\mbutils.c	43;"	macro	file:
 BKR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	638;"	member	struct:TIM1_struct
 BOOL	port\port.h	37;"	typedef
 BRR1	libraries\stm8s_stdperiph_driver\inc\stm8s.h	1766;"	member	struct:UART1_struct
@@ -473,7 +477,7 @@ CLK_ClockSwitchCmd	libraries\stm8s_stdperiph_driver\inc\stm8s_clk.h	357;"	protot
 CLK_ClockSwitchCmd	libraries\stm8s_stdperiph_driver\src\stm8s_clk.c	213;"	function	signature:(FunctionalState NewState)
 CLK_ClockSwitchConfig	libraries\stm8s_stdperiph_driver\inc\stm8s_clk.h	361;"	prototype	signature:(CLK_SwitchMode_TypeDef CLK_SwitchMode, CLK_Source_TypeDef CLK_NewClock, FunctionalState ITState, CLK_CurrentClockState_TypeDef CLK_CurrentClockState)
 CLK_ClockSwitchConfig	libraries\stm8s_stdperiph_driver\src\stm8s_clk.c	309;"	function	signature:(CLK_SwitchMode_TypeDef CLK_SwitchMode, CLK_Source_TypeDef CLK_NewClock, FunctionalState ITState, CLK_CurrentClockState_TypeDef CLK_CurrentClockState)
-CLK_Config	main.c	104;"	function	file:	signature:(void)
+CLK_Config	main.c	115;"	function	file:	signature:(void)
 CLK_Config	main.c	39;"	prototype	file:	signature:(void)
 CLK_CurrentClockState_TypeDef	libraries\stm8s_stdperiph_driver\inc\stm8s_clk.h	56;"	typedef	typeref:enum:__anon37
 CLK_DeInit	libraries\stm8s_stdperiph_driver\inc\stm8s_clk.h	352;"	prototype	signature:(void)
@@ -732,7 +736,7 @@ DRL	libraries\stm8s_stdperiph_driver\inc\stm8s.h	321;"	member	struct:ADC1_struct
 DRL	libraries\stm8s_stdperiph_driver\inc\stm8s.h	392;"	member	struct:ADC2_struct
 DTR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	639;"	member	struct:TIM1_struct
 DUKR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	1521;"	member	struct:FLASH_struct
-Delay	main.c	186;"	function	signature:(uint32_t nCount)
+Delay	main.c	236;"	function	signature:(uint32_t nCount)
 Delay	main.c	40;"	prototype	file:	signature:(uint32_t nCount)
 ECKR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	506;"	member	struct:CLK_struct
 EEPROM	libraries\stm8s_stdperiph_driver\inc\stm8s.h	124;"	macro
@@ -747,7 +751,7 @@ EGR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	829;"	member	struct:TIM2_struct
 EGR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	953;"	member	struct:TIM3_struct
 EIER	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2289;"	member	struct:__anon8::__anon9::__anon15
 ENABLE	libraries\stm8s_stdperiph_driver\inc\stm8s.h	234;"	enumerator	enum:__anon6
-ENTER_CRITICAL_SECTION	port\port.h	34;"	macro
+ENTER_CRITICAL_SECTION	port\port.h	32;"	macro
 ERROR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	237;"	enumerator	enum:__anon7
 ESR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2288;"	member	struct:__anon8::__anon9::__anon15
 ETR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	612;"	member	struct:TIM1_struct
@@ -755,7 +759,7 @@ EV_EXECUTE	modbus\include\mbport.h	44;"	enumerator	enum:__anon20
 EV_FRAME_RECEIVED	modbus\include\mbport.h	43;"	enumerator	enum:__anon20
 EV_FRAME_SENT	modbus\include\mbport.h	45;"	enumerator	enum:__anon20
 EV_READY	modbus\include\mbport.h	42;"	enumerator	enum:__anon20
-EXIT_CRITICAL_SECTION	port\port.h	35;"	macro
+EXIT_CRITICAL_SECTION	port\port.h	33;"	macro
 EXIT_FAILURE	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	7;"	macro
 EXIT_SUCCESS	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	8;"	macro
 EXTI	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2620;"	macro
@@ -997,7 +1001,7 @@ GPIOI	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2646;"	macro
 GPIOI_BaseAddress	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2564;"	macro
 GPIO_CR1_RESET_VALUE	libraries\stm8s_stdperiph_driver\inc\stm8s.h	280;"	macro
 GPIO_CR2_RESET_VALUE	libraries\stm8s_stdperiph_driver\inc\stm8s.h	281;"	macro
-GPIO_Config	main.c	116;"	function	file:	signature:(void)
+GPIO_Config	main.c	127;"	function	file:	signature:(void)
 GPIO_Config	main.c	38;"	prototype	file:	signature:(void)
 GPIO_DDR_RESET_VALUE	libraries\stm8s_stdperiph_driver\inc\stm8s.h	279;"	macro
 GPIO_DeInit	libraries\stm8s_stdperiph_driver\inc\stm8s_gpio.h	139;"	prototype	signature:(GPIO_TypeDef* GPIOx)
@@ -1213,7 +1217,7 @@ IER	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2176;"	member	struct:__anon8
 IER	libraries\stm8s_stdperiph_driver\inc\stm8s.h	613;"	member	struct:TIM1_struct
 IER	libraries\stm8s_stdperiph_driver\inc\stm8s.h	826;"	member	struct:TIM2_struct
 IER	libraries\stm8s_stdperiph_driver\inc\stm8s.h	950;"	member	struct:TIM3_struct
-INLINE	port\port.h	30;"	macro
+INLINE	port\port.h	28;"	macro
 INTERRUPT	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2769;"	macro
 INTERRUPT	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2771;"	macro
 INTERRUPT_HANDLER	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2747;"	macro
@@ -1497,6 +1501,10 @@ IWDG_WriteAccess_Enable	libraries\stm8s_stdperiph_driver\inc\stm8s_iwdg.h	90;"	e
 IWDG_WriteAccess_TypeDef	libraries\stm8s_stdperiph_driver\inc\stm8s_iwdg.h	92;"	typedef	typeref:enum:__anon68
 IWDG_struct	libraries\stm8s_stdperiph_driver\inc\stm8s.h	1604;"	struct
 KR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	1606;"	member	struct:IWDG_struct
+LED1_PIN	main.c	52;"	macro	file:
+LED2_PIN	main.c	54;"	macro	file:
+LED3_PIN	main.c	55;"	macro	file:
+LEDBEEP_PORT	main.c	53;"	macro	file:
 LONG	port\port.h	46;"	typedef
 LSI_FREQUENCY_MAX	libraries\stm8s_stdperiph_driver\inc\stm8s_awu.h	77;"	macro
 LSI_FREQUENCY_MAX	libraries\stm8s_stdperiph_driver\inc\stm8s_beep.h	64;"	macro
@@ -1572,13 +1580,22 @@ MB_PDU_FUNC_READWRITE_WRITE_ADDR_OFF	modbus\functions\mbfuncholding.c	63;"	macro
 MB_PDU_FUNC_READWRITE_WRITE_REGCNT_OFF	modbus\functions\mbfuncholding.c	64;"	macro	file:
 MB_PDU_FUNC_READWRITE_WRITE_VALUES_OFF	modbus\functions\mbfuncholding.c	66;"	macro	file:
 MB_PDU_FUNC_READ_ADDR_OFF	modbus\functions\mbfunccoils.c	45;"	macro	file:
+MB_PDU_FUNC_READ_ADDR_OFF	modbus\functions\mbfuncdisc.c	36;"	macro	file:
 MB_PDU_FUNC_READ_ADDR_OFF	modbus\functions\mbfuncholding.c	45;"	macro	file:
+MB_PDU_FUNC_READ_ADDR_OFF	modbus\functions\mbfuncinput.c	45;"	macro	file:
 MB_PDU_FUNC_READ_COILCNT_MAX	modbus\functions\mbfunccoils.c	48;"	macro	file:
 MB_PDU_FUNC_READ_COILCNT_OFF	modbus\functions\mbfunccoils.c	46;"	macro	file:
+MB_PDU_FUNC_READ_DISCCNT_MAX	modbus\functions\mbfuncdisc.c	39;"	macro	file:
+MB_PDU_FUNC_READ_DISCCNT_OFF	modbus\functions\mbfuncdisc.c	37;"	macro	file:
 MB_PDU_FUNC_READ_REGCNT_MAX	modbus\functions\mbfuncholding.c	48;"	macro	file:
+MB_PDU_FUNC_READ_REGCNT_MAX	modbus\functions\mbfuncinput.c	48;"	macro	file:
 MB_PDU_FUNC_READ_REGCNT_OFF	modbus\functions\mbfuncholding.c	46;"	macro	file:
+MB_PDU_FUNC_READ_REGCNT_OFF	modbus\functions\mbfuncinput.c	46;"	macro	file:
+MB_PDU_FUNC_READ_RSP_BYTECNT_OFF	modbus\functions\mbfuncinput.c	50;"	macro	file:
 MB_PDU_FUNC_READ_SIZE	modbus\functions\mbfunccoils.c	47;"	macro	file:
+MB_PDU_FUNC_READ_SIZE	modbus\functions\mbfuncdisc.c	38;"	macro	file:
 MB_PDU_FUNC_READ_SIZE	modbus\functions\mbfuncholding.c	47;"	macro	file:
+MB_PDU_FUNC_READ_SIZE	modbus\functions\mbfuncinput.c	47;"	macro	file:
 MB_PDU_FUNC_WRITE_ADDR_OFF	modbus\functions\mbfunccoils.c	50;"	macro	file:
 MB_PDU_FUNC_WRITE_ADDR_OFF	modbus\functions\mbfuncholding.c	50;"	macro	file:
 MB_PDU_FUNC_WRITE_MUL_ADDR_OFF	modbus\functions\mbfunccoils.c	54;"	macro	file:
@@ -1684,9 +1701,10 @@ OPT_TypeDef	libraries\stm8s_stdperiph_driver\inc\stm8s.h	1597;"	typedef	typeref:
 OPT_struct	libraries\stm8s_stdperiph_driver\inc\stm8s.h	1579;"	struct
 PCKENR1	libraries\stm8s_stdperiph_driver\inc\stm8s.h	512;"	member	struct:CLK_struct
 PCKENR2	libraries\stm8s_stdperiph_driver\inc\stm8s.h	515;"	member	struct:CLK_struct
+PIN	main.c	64;"	variable	file:
 PR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	1607;"	member	struct:IWDG_struct
-PR_BEGIN_EXTERN_C	port\port.h	31;"	macro
-PR_END_EXTERN_C	port\port.h	32;"	macro
+PR_BEGIN_EXTERN_C	port\port.h	29;"	macro
+PR_END_EXTERN_C	port\port.h	30;"	macro
 PSCR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	1064;"	member	struct:TIM4_struct
 PSCR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	1132;"	member	struct:TIM5_struct
 PSCR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	1264;"	member	struct:TIM6_struct
@@ -1705,6 +1723,8 @@ PointerAttr	libraries\stm8s_stdperiph_driver\inc\stm8s.h	159;"	macro
 RAND_MAX	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	10;"	macro
 RCR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	629;"	member	struct:TIM1_struct
 RECR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2291;"	member	struct:__anon8::__anon9::__anon15
+REG_HOLDING_NREGS	main.c	50;"	macro	file:
+REG_HOLDING_START	main.c	49;"	macro	file:
 REG_INPUT_NREGS	main.c	48;"	macro	file:
 REG_INPUT_START	main.c	47;"	macro	file:
 RESERVED	libraries\stm8s_stdperiph_driver\inc\stm8s.h	1977;"	member	struct:UART3_struct
@@ -3257,7 +3277,7 @@ _PORT_H	port\port.h	23;"	macro
 _RAISONANCE_	libraries\stm8s_stdperiph_driver\inc\stm8s.h	84;"	macro
 __I	libraries\stm8s_stdperiph_driver\inc\stm8s.h	205;"	macro
 __IO	libraries\stm8s_stdperiph_driver\inc\stm8s.h	207;"	macro
-__MODS0__	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\mods0.h	11;"	macro
+__MODSL0__	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\modsl0.h	8;"	macro
 __O	libraries\stm8s_stdperiph_driver\inc\stm8s.h	206;"	macro
 __SIZE_T__	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	17;"	macro
 __STDLIB__	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	5;"	macro
@@ -3300,10 +3320,8 @@ _stext	stm8s_it.h	40;"	prototype	signature:(void)
 _vectab	stm8_interrupt_vector.c	14;"	variable
 abort	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	63;"	macro
 abs	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	36;"	prototype	signature:(int i)
-assert	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\assert.h	16;"	macro
-assert	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\assert.h	4;"	macro
-assert	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\assert.h	6;"	macro
-assert_failed	main.c	204;"	function	signature:(u8* file, u32 line)
+assert	port\port.h	35;"	macro
+assert_failed	main.c	254;"	function	signature:(u8* file, u32 line)
 assert_failed	stm8s_conf.h	108;"	prototype	signature:(uint8_t* file, uint32_t line)
 assert_param	stm8s_conf.h	106;"	macro
 assert_param	stm8s_conf.h	110;"	macro
@@ -3332,12 +3350,15 @@ eMBEventType	modbus\include\mbport.h	46;"	typedef	typeref:enum:__anon20
 eMBException	modbus\include\mbproto.h	70;"	typedef	typeref:enum:__anon22
 eMBFuncReadCoils	modbus\functions\mbfunccoils.c	69;"	function	signature:( UCHAR * pucFrame, USHORT * usLen )
 eMBFuncReadCoils	modbus\include\mbfunc.h	58;"	prototype	signature:( UCHAR * pucFrame, USHORT * usLen )
+eMBFuncReadDiscreteInputs	modbus\functions\mbfuncdisc.c	49;"	function	signature:( UCHAR * pucFrame, USHORT * usLen )
 eMBFuncReadDiscreteInputs	modbus\include\mbfunc.h	70;"	prototype	signature:( UCHAR * pucFrame, USHORT * usLen )
 eMBFuncReadHoldingRegister	modbus\functions\mbfuncholding.c	173;"	function	signature:( UCHAR * pucFrame, USHORT * usLen )
 eMBFuncReadHoldingRegister	modbus\include\mbfunc.h	46;"	prototype	signature:( UCHAR * pucFrame, USHORT * usLen )
+eMBFuncReadInputRegister	modbus\functions\mbfuncinput.c	60;"	function	signature:( UCHAR * pucFrame, USHORT * usLen )
 eMBFuncReadInputRegister	modbus\include\mbfunc.h	42;"	prototype	signature:( UCHAR * pucFrame, USHORT * usLen )
 eMBFuncReadWriteMultipleHoldingRegister	modbus\functions\mbfuncholding.c	238;"	function	signature:( UCHAR * pucFrame, USHORT * usLen )
 eMBFuncReadWriteMultipleHoldingRegister	modbus\include\mbfunc.h	74;"	prototype	signature:( UCHAR * pucFrame, USHORT * usLen )
+eMBFuncReportSlaveID	modbus\functions\mbfuncother.c	82;"	function	signature:( UCHAR * pucFrame, USHORT * usLen )
 eMBFuncReportSlaveID	modbus\include\mbfunc.h	38;"	prototype	signature:( UCHAR * pucFrame, USHORT * usLen )
 eMBFuncWriteCoil	modbus\functions\mbfunccoils.c	149;"	function	signature:( UCHAR * pucFrame, USHORT * usLen )
 eMBFuncWriteCoil	modbus\include\mbfunc.h	62;"	prototype	signature:( UCHAR * pucFrame, USHORT * usLen )
@@ -3364,17 +3385,18 @@ eMBRTUStart	modbus\rtu\mbrtu.h	39;"	prototype	signature:( void )
 eMBRTUStop	modbus\rtu\mbrtu.c	152;"	function	signature:( void )
 eMBRTUStop	modbus\rtu\mbrtu.h	40;"	prototype	signature:( void )
 eMBRcvState	modbus\rtu\mbrtu.c	60;"	typedef	typeref:enum:__anon2	file:
-eMBRegCoilsCB	main.c	168;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNCoils, eMBRegisterMode eMode )
+eMBRegCoilsCB	main.c	218;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNCoils, eMBRegisterMode eMode )
 eMBRegCoilsCB	modbus\include\mb.h	382;"	prototype	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNCoils, eMBRegisterMode eMode )
-eMBRegDiscreteCB	main.c	175;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNDiscrete )
+eMBRegDiscreteCB	main.c	225;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNDiscrete )
 eMBRegDiscreteCB	modbus\include\mb.h	411;"	prototype	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNDiscrete )
-eMBRegHoldingCB	main.c	160;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegisterMode eMode )
+eMBRegHoldingCB	main.c	179;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegisterMode eMode )
 eMBRegHoldingCB	modbus\include\mb.h	347;"	prototype	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegisterMode eMode )
-eMBRegInputCB	main.c	131;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs )
+eMBRegInputCB	main.c	150;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs )
 eMBRegInputCB	modbus\include\mb.h	312;"	prototype	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs )
 eMBRegisterCB	modbus\include\mb.h	265;"	prototype	signature:( UCHAR ucFunctionCode, pxMBFunctionHandler pxHandler )
 eMBRegisterCB	modbus\mb.c	229;"	function	signature:( UCHAR ucFunctionCode, pxMBFunctionHandler pxHandler )
 eMBRegisterMode	modbus\include\mb.h	107;"	typedef	typeref:enum:__anon18
+eMBSetSlaveID	modbus\functions\mbfuncother.c	53;"	function	signature:( UCHAR ucSlaveID, BOOL xIsRunning, UCHAR const *pucAdditional, USHORT usAdditionalLen )
 eMBSetSlaveID	modbus\include\mb.h	241;"	prototype	signature:( UCHAR ucSlaveID, BOOL xIsRunning, UCHAR const *pucAdditional, USHORT usAdditionalLen )
 eMBSndState	modbus\rtu\mbrtu.c	66;"	typedef	typeref:enum:__anon3	file:
 eMBState	modbus\mb.c	70;"	variable	typeref:enum:__anon1	file:
@@ -3404,7 +3426,7 @@ labs	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib
 ldiv	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	45;"	prototype	signature:(long numer, long denom)
 ldiv_t	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	34;"	typedef	typeref:struct:__anon25
 lsqrt	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	54;"	prototype	signature:(unsigned long)
-main	main.c	54;"	function	signature:(void)
+main	main.c	66;"	function	signature:(void)
 malloc	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	46;"	prototype	signature:(unsigned int size)
 memchr	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\string.h	34;"	prototype	signature:(void *s, char c, unsigned int n)
 memcmp	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\string.h	28;"	prototype	signature:(void *s1, void *s2, unsigned int n)
@@ -3418,8 +3440,12 @@ peMBFrameReceive	modbus\include\mbframe.h	74;"	typedef
 peMBFrameReceiveCur	modbus\mb.c	78;"	variable	file:
 peMBFrameSend	modbus\include\mbframe.h	78;"	typedef
 peMBFrameSendCur	modbus\mb.c	75;"	variable	file:
+pin_output	main.c	132;"	function	file:	signature:(uint8_t pin_index, bool io_state)
 prveMBError2Exception	modbus\functions\mbfunccoils.c	62;"	prototype	file:	signature:( eMBErrorCode eErrorCode )
+prveMBError2Exception	modbus\functions\mbfuncdisc.c	42;"	prototype	file:	signature:( eMBErrorCode eErrorCode )
 prveMBError2Exception	modbus\functions\mbfuncholding.c	70;"	prototype	file:	signature:( eMBErrorCode eErrorCode )
+prveMBError2Exception	modbus\functions\mbfuncinput.c	53;"	prototype	file:	signature:( eMBErrorCode eErrorCode )
+prveMBError2Exception	modbus\functions\mbutils.c	117;"	function	signature:( eMBErrorCode eErrorCode )
 pucSndBufferCur	modbus\rtu\mbrtu.c	74;"	variable	file:
 pvMBFrameClose	modbus\include\mbframe.h	82;"	typedef
 pvMBFrameCloseCur	modbus\mb.c	79;"	variable	file:
@@ -3475,15 +3501,19 @@ u32	libraries\stm8s_stdperiph_driver\inc\stm8s.h	225;"	typedef
 u8	libraries\stm8s_stdperiph_driver\inc\stm8s.h	227;"	typedef
 ucFunctionCode	modbus\include\mbproto.h	76;"	member	struct:__anon23
 ucMBAddress	modbus\mb.c	62;"	variable	file:
+ucMBSlaveID	modbus\functions\mbfuncother.c	47;"	variable	file:
 ucRTUBuf	modbus\rtu\mbrtu.c	72;"	variable
 uint16_t	libraries\stm8s_stdperiph_driver\inc\stm8s.h	216;"	typedef
 uint32_t	libraries\stm8s_stdperiph_driver\inc\stm8s.h	217;"	typedef
 uint8_t	libraries\stm8s_stdperiph_driver\inc\stm8s.h	215;"	typedef
 usMBCRC16	modbus\rtu\mbcrc.c	85;"	function	signature:( UCHAR * pucFrame, USHORT usLen )
 usMBCRC16	modbus\rtu\mbcrc.h	34;"	prototype	signature:( UCHAR * pucFrame, USHORT usLen )
+usMBSlaveIDLen	modbus\functions\mbfuncother.c	48;"	variable	file:
 usRcvBufferPos	modbus\rtu\mbrtu.c	77;"	variable	file:
-usRegInputBuf	main.c	52;"	variable	file:
-usRegInputStart	main.c	51;"	variable	file:
+usRegHoldingBuf	main.c	62;"	variable	file:
+usRegHoldingStart	main.c	61;"	variable	file:
+usRegInputBuf	main.c	60;"	variable	file:
+usRegInputStart	main.c	59;"	variable	file:
 usSndBufferCount	modbus\rtu\mbrtu.c	75;"	variable	file:
 vMBPortClose	modbus\include\mbport.h	74;"	prototype	signature:( void )
 vMBPortSerialEnable	modbus\include\mbport.h	78;"	prototype	signature:( BOOL xRxEnable, BOOL xTxEnable )
@@ -3527,5 +3557,7 @@ xMBRTUTransmitFSM	modbus\rtu\mbrtu.h	44;"	prototype	signature:( void )
 xMBTCPPortGetRequest	modbus\include\mbport.h	122;"	prototype	signature:( UCHAR **ppucMBTCPFrame, USHORT * usTCPLength )
 xMBTCPPortInit	modbus\include\mbport.h	116;"	prototype	signature:( USHORT usTCPPort )
 xMBTCPPortSendResponse	modbus\include\mbport.h	124;"	prototype	signature:( const UCHAR *pucMBTCPFrame, USHORT usTCPLength )
+xMBUtilGetBits	modbus\functions\mbutils.c	86;"	function	signature:( UCHAR * ucByteBuf, USHORT usBitOffset, UCHAR ucNBits )
 xMBUtilGetBits	modbus\include\mbutils.h	100;"	prototype	signature:( UCHAR * ucByteBuf, USHORT usBitOffset, UCHAR ucNBits )
+xMBUtilSetBits	modbus\functions\mbutils.c	47;"	function	signature:( UCHAR * ucByteBuf, USHORT usBitOffset, UCHAR ucNBits, UCHAR ucValue )
 xMBUtilSetBits	modbus\include\mbutils.h	78;"	prototype	signature:( UCHAR * ucByteBuf, USHORT usBitOffset, UCHAR ucNBits, UCHAR ucValues )

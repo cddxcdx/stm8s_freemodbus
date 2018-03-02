@@ -38,7 +38,7 @@
 static void GPIO_Config(void);
 static void CLK_Config(void);
 void Delay(uint32_t nCount);
-
+void Alarmlight_Driver(uint16_t* bufaddr, uint16_t nbufs);
 /* Private functions ---------------------------------------------------------*/
 const uint8_t *FW_Pro = "Angle alarm";
 const uint8_t *FW_Ver = "0.1.0";
@@ -46,10 +46,22 @@ const uint8_t *FW_Ver = "0.1.0";
 /* ----------------------- Defines ------------------------------------------*/
 #define REG_INPUT_START 1000+1
 #define REG_INPUT_NREGS 4
+#define REG_HOLDING_START 1
+#define REG_HOLDING_NREGS 100
+
+#define LED1_PIN GPIO_PIN_0
+#define LEDBEEP_PORT 	GPIOD
+#define LED2_PIN GPIO_PIN_1
+#define LED3_PIN GPIO_PIN_2
+#define BEEP_PIN GPIO_PIN_3
 
 /* ----------------------- Static variables ---------------------------------*/
 static USHORT   usRegInputStart = REG_INPUT_START;
 static USHORT   usRegInputBuf[REG_INPUT_NREGS];
+static USHORT   usRegHoldingStart = REG_HOLDING_START;
+static USHORT   usRegHoldingBuf[REG_HOLDING_NREGS];
+
+static GPIO_Pin_TypeDef PIN[REG_HOLDING_NREGS] = {LED1_PIN, LED2_PIN, LED3_PIN, BEEP_PIN};
 
 void main(void)
 {
@@ -61,10 +73,7 @@ void main(void)
 
   /* GPIO configuration -----------------------------------------*/
   GPIO_Config();
-
-  /* SPI configuration -----------------------------------------*/
-//  SPI_Config();
-
+	
   /*
   eMBErrorCode
   eMBInit( eMBMode eMode, UCHAR ucSlaveAddress, UCHAR ucPort, ULONG ulBaudRate, eMBParity eParity )
@@ -88,10 +97,12 @@ void main(void)
 
     /* Here we simply count the number of poll cycles. */
 //    usRegInputBuf[0]++;
-    usRegInputBuf[0]++;
+    /*usRegInputBuf[0]++;
     usRegInputBuf[1]=1;
     usRegInputBuf[2]=2;
-    usRegInputBuf[3]=3;
+    usRegInputBuf[3]=3;*/
+		
+		Alarmlight_Driver(usRegHoldingBuf, REG_HOLDING_NREGS);
   
   }
 }
@@ -115,12 +126,20 @@ static void CLK_Config(void)
   */
 static void GPIO_Config(void)
 {
-  /* Initialize LEDs mounted on the Eval board */
-//  STM_EVAL_LEDInit(LED1);
-//  STM_EVAL_LEDInit(LED2);
-//  STM_EVAL_LEDInit(LED3);
-//  STM_EVAL_LEDInit(LED4);
-    //beep_init();
+	GPIO_Init(LEDBEEP_PORT, LED1_PIN | LED2_PIN | LED3_PIN | BEEP_PIN, GPIO_MODE_OUT_PP_LOW_SLOW);
+}
+
+static void pin_output(uint8_t pin_index, bool io_state)
+{
+	io_state == FALSE ? GPIO_WriteLow( LEDBEEP_PORT, PIN[pin_index] ) \
+											: GPIO_WriteHigh( LEDBEEP_PORT, PIN[pin_index] );
+}
+
+void Alarmlight_Driver(uint16_t* bufaddr, uint16_t nbufs)
+{
+	uint16_t i;
+	for(i = 0; i < nbufs; i ++)
+		(uint16_t)(*(bufaddr + nbufs)) > 0 ? pin_output(i, 1):pin_output(i, 0); 
 }
 
 /* 该函数为 0x04的数据填写回调函数，该函数由mbfuncinput.c中的
@@ -160,7 +179,38 @@ eMBErrorCode
 eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
                  eMBRegisterMode eMode )
 {
-    return MB_ENOREG;
+    eMBErrorCode    eStatus = MB_ENOERR;
+    int             iRegIndex;
+
+    // 输入的地址信息检测
+    if( ( usAddress >= REG_HOLDING_START )
+        && ( usAddress + usNRegs <= REG_HOLDING_START + REG_HOLDING_NREGS ) )
+    {
+        iRegIndex = ( int )( usAddress - usRegHoldingStart );
+        while( usNRegs > 0 )
+        {
+					if(eMode == MB_REG_READ)
+					{	
+            *pucRegBuffer++ =
+                ( unsigned char )( usRegHoldingBuf[iRegIndex] >> 8 );
+            *pucRegBuffer++ =
+                ( unsigned char )( usRegHoldingBuf[iRegIndex] & 0xFF );
+					}
+					else if(eMode == MB_REG_WRITE)
+					{
+						usRegHoldingBuf[iRegIndex] =  ((USHORT)(*(pucRegBuffer+1))<<8)|((*pucRegBuffer)&0xFF);
+						pucRegBuffer += 2;
+					}
+					iRegIndex++;
+          usNRegs--;
+        }
+    }
+    else
+    {
+        eStatus = MB_ENOREG;
+    }
+
+    return eStatus;
 }
 
 

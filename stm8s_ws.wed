@@ -365,14 +365,13 @@ Buttons=BAAAAAAIAACAAAAAAIAADAAAAAAIAAEAAAAAAIAAFAAAAAAIAAGAAAAAAIAAHAAAAAAIAAIA
 
 [WorkState_v1_2.DockState.Bar-9]
 BarID=59392
-XPos=1
 YPos=30
 MRUWidth=131
 Docking=True
 MRUDockID=59419
-MRUDockLeftPos=1
+MRUDockLeftPos=-1
 MRUDockTopPos=30
-MRUDockRightPos=149
+MRUDockRightPos=147
 MRUDockBottomPos=60
 MRUFloatStyle=8196
 MRUFloatXPos=-1
@@ -384,7 +383,7 @@ MDIChild=False
 AutoHide=False
 AutoHidePinned=False
 LastAlignedDocking=0
-PctWidth=184352
+PctWidth=333333
 MRUFloatCX=148
 MRUFloatCY=30
 MRUHorzDockCX=148
@@ -405,14 +404,14 @@ Buttons=AABOAAAAAAGPDBAAAAAAAIIBAAAAAAAAAAAAAAAADABOAAAAAAAAAAAAAAAAHABOAAAAAA
 
 [WorkState_v1_2.DockState.Bar-10]
 BarID=59396
-XPos=342
+XPos=147
 YPos=30
 MRUWidth=566
 Docking=True
 MRUDockID=59419
-MRUDockLeftPos=342
+MRUDockLeftPos=147
 MRUDockTopPos=30
-MRUDockRightPos=925
+MRUDockRightPos=730
 MRUDockBottomPos=60
 MRUFloatStyle=8196
 MRUFloatXPos=-1
@@ -424,7 +423,7 @@ MDIChild=False
 AutoHide=False
 AutoHidePinned=False
 LastAlignedDocking=0
-PctWidth=631295
+PctWidth=333333
 MRUFloatCX=580
 MRUFloatCY=30
 MRUHorzDockCX=583
@@ -485,14 +484,14 @@ Buttons=IFGBAAAAAAJFGBAAAAAAAAAAAAAAAAFEGBAAAAAAIEGBAAAAAAEEGBAAAAAAMEGBAAAAAAAA
 
 [WorkState_v1_2.DockState.Bar-12]
 BarID=59398
-XPos=569
+XPos=401
 YPos=60
 MRUWidth=339
 Docking=True
 MRUDockID=59419
-MRUDockLeftPos=569
+MRUDockLeftPos=401
 MRUDockTopPos=60
-MRUDockRightPos=925
+MRUDockRightPos=757
 MRUDockBottomPos=90
 MRUFloatStyle=8196
 MRUFloatXPos=-1
@@ -504,7 +503,7 @@ MDIChild=False
 AutoHide=False
 AutoHidePinned=False
 LastAlignedDocking=0
-PctWidth=127407
+PctWidth=333333
 MRUFloatCX=356
 MRUFloatCY=30
 MRUHorzDockCX=356
@@ -525,14 +524,13 @@ Buttons=KAAIAAAACAEGAAMAAIAAAACAEGAAAAAAAAAAAABBAIAAAAAACBAIAAAAAADBAIAAAAAAAAAA
 
 [WorkState_v1_2.DockState.Bar-13]
 BarID=59399
-XPos=0
 YPos=60
 MRUWidth=385
 Docking=True
 MRUDockID=59419
-MRUDockLeftPos=0
+MRUDockLeftPos=-1
 MRUDockTopPos=60
-MRUDockRightPos=402
+MRUDockRightPos=401
 MRUDockBottomPos=90
 MRUFloatStyle=8196
 MRUFloatXPos=-1
@@ -544,7 +542,7 @@ MDIChild=False
 AutoHide=False
 AutoHidePinned=False
 LastAlignedDocking=0
-PctWidth=714187
+PctWidth=333333
 MRUFloatCX=402
 MRUFloatCY=30
 MRUHorzDockCX=402
@@ -565,14 +563,14 @@ Buttons=HKAIAAAAAAIKAIAAAAAAAAAAAAAAAAADKBAAAAAAAAAAAAAAAAGPKBAAAAAAEPKBAAAAAAFP
 
 [WorkState_v1_2.DockState.Bar-14]
 BarID=59400
-XPos=925
+XPos=730
 YPos=30
 MRUWidth=23
 Docking=True
 MRUDockID=59419
-MRUDockLeftPos=925
+MRUDockLeftPos=730
 MRUDockTopPos=30
-MRUDockRightPos=965
+MRUDockRightPos=770
 MRUDockBottomPos=60
 MRUFloatStyle=8196
 MRUFloatXPos=-1
@@ -584,7 +582,7 @@ MDIChild=False
 AutoHide=False
 AutoHidePinned=False
 LastAlignedDocking=0
-PctWidth=184352
+PctWidth=333333
 MRUFloatCX=40
 MRUFloatCY=30
 MRUHorzDockCX=40
@@ -605,14 +603,14 @@ Buttons=JPAIAAAAAA
 
 [WorkState_v1_2.DockState.Bar-15]
 BarID=59401
-XPos=925
+XPos=757
 YPos=60
 MRUWidth=77
 Docking=True
 MRUDockID=59419
-MRUDockLeftPos=925
+MRUDockLeftPos=757
 MRUDockTopPos=60
-MRUDockRightPos=1019
+MRUDockRightPos=851
 MRUDockBottomPos=90
 MRUFloatStyle=8196
 MRUFloatXPos=-1
@@ -624,7 +622,7 @@ MDIChild=False
 AutoHide=False
 AutoHidePinned=False
 LastAlignedDocking=0
-PctWidth=158405
+PctWidth=333333
 MRUFloatCX=94
 MRUFloatCY=30
 MRUHorzDockCX=94
@@ -732,7 +730,7 @@ MRUDockID=0
 MRUDockLeftPos=1
 MRUDockTopPos=-2
 MRUDockRightPos=318
-MRUDockBottomPos=391
+MRUDockBottomPos=407
 MRUFloatStyle=4
 MRUFloatXPos=-1
 MRUFloatYPos=0
@@ -749,7 +747,7 @@ MRUFloatCY=180
 MRUHorzDockCX=300
 MRUHorzDockCY=180
 MRUVertDockCX=317
-MRUVertDockCY=393
+MRUVertDockCY=409
 MRUDockingState=0
 DockingStyle=61440
 TypeID=0
@@ -766,7 +764,7 @@ MRUDockID=0
 MRUDockLeftPos=1
 MRUDockTopPos=5
 MRUDockRightPos=1366
-MRUDockBottomPos=202
+MRUDockBottomPos=186
 MRUFloatStyle=4
 MRUFloatXPos=-1
 MRUFloatYPos=0
@@ -781,7 +779,7 @@ PctWidth=1000000
 MRUFloatCX=300
 MRUFloatCY=180
 MRUHorzDockCX=1365
-MRUHorzDockCY=197
+MRUHorzDockCY=181
 MRUVertDockCX=300
 MRUVertDockCY=180
 MRUDockingState=0
@@ -851,7 +849,7 @@ PctWidth=500000
 MRUFloatCX=300
 MRUFloatCY=180
 MRUHorzDockCX=300
-MRUHorzDockCY=197
+MRUHorzDockCY=181
 MRUVertDockCX=300
 MRUVertDockCY=180
 MRUDockingState=0
@@ -1061,7 +1059,7 @@ PctWidth=666665
 MRUFloatCX=300
 MRUFloatCY=180
 MRUHorzDockCX=300
-MRUHorzDockCY=197
+MRUHorzDockCY=181
 MRUVertDockCX=300
 MRUVertDockCY=180
 MRUDockingState=0
@@ -1096,7 +1094,7 @@ PctWidth=750000
 MRUFloatCX=300
 MRUFloatCY=180
 MRUHorzDockCX=300
-MRUHorzDockCY=197
+MRUHorzDockCY=181
 MRUVertDockCX=300
 MRUVertDockCY=180
 MRUDockingState=0
@@ -1131,7 +1129,7 @@ PctWidth=800000
 MRUFloatCX=300
 MRUFloatCY=180
 MRUHorzDockCX=300
-MRUHorzDockCY=197
+MRUHorzDockCY=181
 MRUVertDockCX=300
 MRUVertDockCY=180
 MRUDockingState=0
@@ -1244,7 +1242,7 @@ ptn_Child1=MainFrame
 ptn_Child2=ChildFrames
 
 [WorkState_v1_2.Frames.MainFrame]
-WindowPlacement=MCAAAAAACAAAAAAADAAAAAAAAADIPPPPAADIPPPPPPPPPPPPPPPPPPPPHLAAAAAAEHAAAAAAEGEAAAAADBDAAAAA
+WindowPlacement=MCAAAAAACAAAAAAADAAAAAAAAADIPPPPAADIPPPPPPPPPPPPPPPPPPPPNAAAAAAAJDAAAAAAKLDAAAAAINCAAAAA
 Title=ST Visual Develop - stm8s_ws.stw - [main.c]
 
 [WorkState_v1_2.Frames.ChildFrames]
@@ -1253,6 +1251,9 @@ ptn_Child2=Document-1
 ptn_Child3=Document-2
 ptn_Child4=Document-3
 ptn_Child5=Document-4
+ptn_Child6=Document-5
+ptn_Child7=Document-6
+ptn_Child8=Document-7
 
 [WorkState_v1_2.Frames.ChildFrames.Document-0]
 ptn_Child1=ViewFrame-0
@@ -1291,20 +1292,53 @@ IsFrameVisible=True
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-3.ViewFrame-0]
-DocPathName=debug\i_alarmlight.lkf
+DocPathName=main.c
 DocumentString=
 DocTemplateIndex=0
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPCDAAAAAACDAAAAAAGMDAAAAAHCBAAAAA
-IsActiveChildFrame=False
+WindowPlacement=MCAAAAAACAAAAAAADAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPLEAAAAAALEAAAAAAPNDAAAAAAEBAAAAA
+IsActiveChildFrame=True
 IsFrameVisible=True
 
 [WorkState_v1_2.Frames.ChildFrames.Document-4]
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-4.ViewFrame-0]
-DocPathName=main.c
+DocPathName=modbus\functions\mbfuncholding.c
 DocumentString=
 DocTemplateIndex=0
-WindowPlacement=MCAAAAAACAAAAAAADAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPLEAAAAAALEAAAAAAPNDAAAAAAEBAAAAA
-IsActiveChildFrame=True
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPJBAAAAAAJBAAAAAAGMDAAAAACOAAAAAA
+IsActiveChildFrame=False
+IsFrameVisible=True
+
+[WorkState_v1_2.Frames.ChildFrames.Document-5]
+ptn_Child1=ViewFrame-0
+
+[WorkState_v1_2.Frames.ChildFrames.Document-5.ViewFrame-0]
+DocPathName=modbus\include\mbconfig.h
+DocumentString=
+DocTemplateIndex=0
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPCDAAAAAACDAAAAAAPNDAAAAALPAAAAAA
+IsActiveChildFrame=False
+IsFrameVisible=True
+
+[WorkState_v1_2.Frames.ChildFrames.Document-6]
+ptn_Child1=ViewFrame-0
+
+[WorkState_v1_2.Frames.ChildFrames.Document-6.ViewFrame-0]
+DocPathName=modbus\include\mb.h
+DocumentString=
+DocTemplateIndex=0
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPCDAAAAAACDAAAAAAGMDAAAAAJABAAAAA
+IsActiveChildFrame=False
+IsFrameVisible=True
+
+[WorkState_v1_2.Frames.ChildFrames.Document-7]
+ptn_Child1=ViewFrame-0
+
+[WorkState_v1_2.Frames.ChildFrames.Document-7.ViewFrame-0]
+DocPathName=libraries\stm8s_stdperiph_driver\inc\stm8s_gpio.h
+DocumentString=
+DocTemplateIndex=0
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPLEAAAAAALEAAAAAAPNDAAAAACCBAAAAA
+IsActiveChildFrame=False
 IsFrameVisible=True

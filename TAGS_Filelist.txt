@@ -3,7 +3,12 @@ libraries\stm8s_stdperiph_driver\src\stm8s_gpio.c
 libraries\stm8s_stdperiph_driver\src\stm8s_tim2.c
 libraries\stm8s_stdperiph_driver\src\stm8s_uart2.c
 modbus\functions\mbfunccoils.c
+modbus\functions\mbfuncdiag.c
+modbus\functions\mbfuncdisc.c
 modbus\functions\mbfuncholding.c
+modbus\functions\mbfuncinput.c
+modbus\functions\mbfuncother.c
+modbus\functions\mbutils.c
 modbus\mb.c
 modbus\rtu\mbcrc.c
 modbus\rtu\mbrtu.c
@@ -26,8 +31,7 @@ modbus\include\mbutils.h
 modbus\rtu\mbcrc.h
 modbus\rtu\mbrtu.h
 port\port.h
-..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\assert.h
-..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\mods0.h
+..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\modsl0.h
 ..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h
 ..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\string.h
 libraries\stm8s_stdperiph_driver\inc\stm8s_adc1.h
