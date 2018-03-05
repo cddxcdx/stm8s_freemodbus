@@ -61,7 +61,7 @@ static USHORT   usRegInputBuf[REG_INPUT_NREGS];
 static USHORT   usRegHoldingStart = REG_HOLDING_START;
 static USHORT   usRegHoldingBuf[REG_HOLDING_NREGS];
 
-static GPIO_Pin_TypeDef PIN[REG_HOLDING_NREGS] = {LED1_PIN, LED2_PIN, LED3_PIN, BEEP_PIN};
+static GPIO_Pin_TypeDef PIN[4] = {LED1_PIN, LED2_PIN, LED3_PIN, BEEP_PIN};
 
 void main(void)
 {
@@ -97,12 +97,12 @@ void main(void)
 
     /* Here we simply count the number of poll cycles. */
 //    usRegInputBuf[0]++;
-    /*usRegInputBuf[0]++;
+    usRegInputBuf[0]++;
     usRegInputBuf[1]=1;
     usRegInputBuf[2]=2;
-    usRegInputBuf[3]=3;*/
+    usRegInputBuf[3]=3;
 		
-		Alarmlight_Driver(usRegHoldingBuf, REG_HOLDING_NREGS);
+		Alarmlight_Driver(usRegHoldingBuf, 4);
   
   }
 }
@@ -129,17 +129,16 @@ static void GPIO_Config(void)
 	GPIO_Init(LEDBEEP_PORT, LED1_PIN | LED2_PIN | LED3_PIN | BEEP_PIN, GPIO_MODE_OUT_PP_LOW_SLOW);
 }
 
-static void pin_output(uint8_t pin_index, bool io_state)
+static void pin_output(uint16_t pin_index, bool io_state)
 {
-	io_state == FALSE ? GPIO_WriteLow( LEDBEEP_PORT, PIN[pin_index] ) \
-											: GPIO_WriteHigh( LEDBEEP_PORT, PIN[pin_index] );
+	(io_state == FALSE) ? GPIO_WriteLow( LEDBEEP_PORT, PIN[pin_index] ):GPIO_WriteHigh( LEDBEEP_PORT, PIN[pin_index] );
 }
 
 void Alarmlight_Driver(uint16_t* bufaddr, uint16_t nbufs)
 {
 	uint16_t i;
 	for(i = 0; i < nbufs; i ++)
-		(uint16_t)(*(bufaddr + nbufs)) > 0 ? pin_output(i, 1):pin_output(i, 0); 
+		((uint16_t)(*(bufaddr + i)) > 0) ? pin_output(i, TRUE) : pin_output(i, FALSE); 
 }
 
 /* 该函数为 0x04的数据填写回调函数，该函数由mbfuncinput.c中的
@@ -198,7 +197,7 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 					}
 					else if(eMode == MB_REG_WRITE)
 					{
-						usRegHoldingBuf[iRegIndex] =  ((USHORT)(*(pucRegBuffer+1))<<8)|((*pucRegBuffer)&0xFF);
+						usRegHoldingBuf[iRegIndex] =  ((USHORT)(*pucRegBuffer)<<8)|((*(pucRegBuffer+1))&0xFF);
 						pucRegBuffer += 2;
 					}
 					iRegIndex++;
