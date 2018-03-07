@@ -59,7 +59,7 @@ const uint8_t *FW_Ver = "0.1.0";
 static USHORT   usRegInputStart = REG_INPUT_START;
 static USHORT   usRegInputBuf[REG_INPUT_NREGS];
 static USHORT   usRegHoldingStart = REG_HOLDING_START;
-static USHORT   usRegHoldingBuf[REG_HOLDING_NREGS];
+static USHORT   usRegHoldingBuf[REG_HOLDING_NREGS] = {1, 1, 1, 1, 1};
 
 static GPIO_Pin_TypeDef PIN[4] = {LED1_PIN, LED2_PIN, LED3_PIN, BEEP_PIN};
 

@@ -203,7 +203,7 @@ AWU_Timebase_TypeDef	libraries\stm8s_stdperiph_driver\inc\stm8s_awu.h	64;"	typed
 AWU_TypeDef	libraries\stm8s_stdperiph_driver\inc\stm8s.h	441;"	typedef	typeref:struct:AWU_struct
 AWU_struct	libraries\stm8s_stdperiph_driver\inc\stm8s.h	435;"	struct
 AffBit	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2792;"	macro
-Alarmlight_Driver	main.c	142;"	function	signature:(uint16_t* bufaddr, uint16_t nbufs)
+Alarmlight_Driver	main.c	137;"	function	signature:(uint16_t* bufaddr, uint16_t nbufs)
 Alarmlight_Driver	main.c	41;"	prototype	file:	signature:(uint16_t* bufaddr, uint16_t nbufs)
 BEEP	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2612;"	macro
 BEEP_BaseAddress	libraries\stm8s_stdperiph_driver\inc\stm8s.h	2572;"	macro
@@ -736,7 +736,7 @@ DRL	libraries\stm8s_stdperiph_driver\inc\stm8s.h	321;"	member	struct:ADC1_struct
 DRL	libraries\stm8s_stdperiph_driver\inc\stm8s.h	392;"	member	struct:ADC2_struct
 DTR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	639;"	member	struct:TIM1_struct
 DUKR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	1521;"	member	struct:FLASH_struct
-Delay	main.c	240;"	function	signature:(uint32_t nCount)
+Delay	main.c	235;"	function	signature:(uint32_t nCount)
 Delay	main.c	40;"	prototype	file:	signature:(uint32_t nCount)
 ECKR	libraries\stm8s_stdperiph_driver\inc\stm8s.h	506;"	member	struct:CLK_struct
 EEPROM	libraries\stm8s_stdperiph_driver\inc\stm8s.h	124;"	macro
@@ -3321,7 +3321,7 @@ _vectab	stm8_interrupt_vector.c	14;"	variable
 abort	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	63;"	macro
 abs	..\..\..\..\..\program files (x86)\cosmic\fse_compilers\cxstm8\hstm8\stdlib.h	36;"	prototype	signature:(int i)
 assert	port\port.h	35;"	macro
-assert_failed	main.c	258;"	function	signature:(u8* file, u32 line)
+assert_failed	main.c	253;"	function	signature:(u8* file, u32 line)
 assert_failed	stm8s_conf.h	108;"	prototype	signature:(uint8_t* file, uint32_t line)
 assert_param	stm8s_conf.h	106;"	macro
 assert_param	stm8s_conf.h	110;"	macro
@@ -3385,13 +3385,13 @@ eMBRTUStart	modbus\rtu\mbrtu.h	39;"	prototype	signature:( void )
 eMBRTUStop	modbus\rtu\mbrtu.c	152;"	function	signature:( void )
 eMBRTUStop	modbus\rtu\mbrtu.h	40;"	prototype	signature:( void )
 eMBRcvState	modbus\rtu\mbrtu.c	60;"	typedef	typeref:enum:__anon2	file:
-eMBRegCoilsCB	main.c	222;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNCoils, eMBRegisterMode eMode )
+eMBRegCoilsCB	main.c	217;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNCoils, eMBRegisterMode eMode )
 eMBRegCoilsCB	modbus\include\mb.h	382;"	prototype	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNCoils, eMBRegisterMode eMode )
-eMBRegDiscreteCB	main.c	229;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNDiscrete )
+eMBRegDiscreteCB	main.c	224;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNDiscrete )
 eMBRegDiscreteCB	modbus\include\mb.h	411;"	prototype	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNDiscrete )
-eMBRegHoldingCB	main.c	183;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegisterMode eMode )
+eMBRegHoldingCB	main.c	178;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegisterMode eMode )
 eMBRegHoldingCB	modbus\include\mb.h	347;"	prototype	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs, eMBRegisterMode eMode )
-eMBRegInputCB	main.c	154;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs )
+eMBRegInputCB	main.c	149;"	function	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs )
 eMBRegInputCB	modbus\include\mb.h	312;"	prototype	signature:( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs )
 eMBRegisterCB	modbus\include\mb.h	265;"	prototype	signature:( UCHAR ucFunctionCode, pxMBFunctionHandler pxHandler )
 eMBRegisterCB	modbus\mb.c	229;"	function	signature:( UCHAR ucFunctionCode, pxMBFunctionHandler pxHandler )
@@ -3440,7 +3440,7 @@ peMBFrameReceive	modbus\include\mbframe.h	74;"	typedef
 peMBFrameReceiveCur	modbus\mb.c	78;"	variable	file:
 peMBFrameSend	modbus\include\mbframe.h	78;"	typedef
 peMBFrameSendCur	modbus\mb.c	75;"	variable	file:
-pin_output	main.c	132;"	function	file:	signature:(uint8_t pin_index, bool io_state)
+pin_output	main.c	132;"	function	file:	signature:(uint16_t pin_index, bool io_state)
 prveMBError2Exception	modbus\functions\mbfunccoils.c	62;"	prototype	file:	signature:( eMBErrorCode eErrorCode )
 prveMBError2Exception	modbus\functions\mbfuncdisc.c	42;"	prototype	file:	signature:( eMBErrorCode eErrorCode )
 prveMBError2Exception	modbus\functions\mbfuncholding.c	70;"	prototype	file:	signature:( eMBErrorCode eErrorCode )
