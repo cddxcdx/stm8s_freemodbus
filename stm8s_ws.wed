@@ -49,7 +49,7 @@ ptn_Child33=Bar-32
 
 [WorkState_v1_2.DockState.Bar-0]
 BarID=59419
-Bars=32
+Bars=23
 Bar#0=0
 Bar#1=59647
 Bar#2=0
@@ -73,15 +73,6 @@ Bar#19=0
 Bar#20=0
 Bar#21=0
 Bar#22=0
-Bar#23=0
-Bar#24=0
-Bar#25=0
-Bar#26=0
-Bar#27=0
-Bar#28=0
-Bar#29=0
-Bar#30=0
-Bar#31=0
 Style=0
 ExStyle=0
 PrevFloating=False
@@ -1259,7 +1250,7 @@ ptn_Child1=MainFrame
 ptn_Child2=ChildFrames
 
 [WorkState_v1_2.Frames.MainFrame]
-WindowPlacement=MCAAAAAACAAAAAAADAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPONAAAAAABBAAAAAALIEAAAAAALCAAAAA
+WindowPlacement=MCAAAAAACAAAAAAADAAAAAAAAADIPPPPAADIPPPPPPPPPPPPPPPPPPPPONAAAAAABBAAAAAALIEAAAAAALCAAAAA
 Title=ST Visual Develop - stm8s_ws.stw - [main.c]
 
 [WorkState_v1_2.Frames.ChildFrames]
@@ -1289,10 +1280,10 @@ IsFrameVisible=True
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-1.ViewFrame-0]
-DocPathName=libraries\stm8s_stdperiph_driver\src\stm8s_tim2.c
+DocPathName=port\porttimer.c
 DocumentString=
 DocTemplateIndex=0
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPLEAAAAAALEAAAAAAPMDAAAAAGFBAAAAA
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPCDAAAAAACDAAAAAAGLDAAAAANDBAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
@@ -1300,10 +1291,10 @@ IsFrameVisible=True
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-2.ViewFrame-0]
-DocPathName=libraries\stm8s_stdperiph_driver\src\stm8s_gpio.c
+DocPathName=libraries\stm8s_stdperiph_driver\src\stm8s_tim2.c
 DocumentString=
 DocTemplateIndex=0
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPJBAAAAAAJBAAAAAANPBAAAAAEPAAAAAA
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPLEAAAAAALEAAAAAAPMDAAAAAGFBAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
@@ -1311,10 +1302,10 @@ IsFrameVisible=True
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-3.ViewFrame-0]
-DocPathName=modbus\mb.c
+DocPathName=libraries\stm8s_stdperiph_driver\src\stm8s_gpio.c
 DocumentString=
 DocTemplateIndex=0
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPCDAAAAAACDAAAAAAGBCAAAAANABAAAAA
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPJBAAAAAAJBAAAAAANPBAAAAAEPAAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
@@ -1322,10 +1313,10 @@ IsFrameVisible=True
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-4.ViewFrame-0]
-DocPathName=libraries\stm8s_stdperiph_driver\inc\stm8s_gpio.h
+DocPathName=modbus\mb.c
 DocumentString=
 DocTemplateIndex=0
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPLEAAAAAALEAAAAAAPNDAAAAAAFBAAAAA
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPCDAAAAAACDAAAAAAGBCAAAAANABAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
@@ -1333,10 +1324,10 @@ IsFrameVisible=True
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-5.ViewFrame-0]
-DocPathName=libraries\stm8s_stdperiph_driver\inc\stm8s.h
+DocPathName=libraries\stm8s_stdperiph_driver\inc\stm8s_gpio.h
 DocumentString=
 DocTemplateIndex=0
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPEGAAAAAAEGAAAAAAIODAAAAAPGBAAAAA
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPLEAAAAAALEAAAAAAPNDAAAAAAFBAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
@@ -1344,10 +1335,10 @@ IsFrameVisible=True
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-6.ViewFrame-0]
-DocPathName=stm8s_it.c
+DocPathName=libraries\stm8s_stdperiph_driver\inc\stm8s.h
 DocumentString=
 DocTemplateIndex=0
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPNHAAAAAANHAAAAAABAEAAAAAIIBAAAAA
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPEGAAAAAAEGAAAAAAIODAAAAAPGBAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
@@ -1355,10 +1346,10 @@ IsFrameVisible=True
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-7.ViewFrame-0]
-DocPathName=modbus\rtu\mbrtu.c
+DocPathName=stm8s_it.c
 DocumentString=
 DocTemplateIndex=0
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPAAAAAAAAAAAAAAAAEIDAAAAALABAAAAA
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPNHAAAAAANHAAAAAABAEAAAAAIIBAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
@@ -1366,10 +1357,10 @@ IsFrameVisible=True
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-8.ViewFrame-0]
-DocPathName=port\portserial.c
+DocPathName=modbus\rtu\mbrtu.c
 DocumentString=
 DocTemplateIndex=0
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPJBAAAAAAJBAAAAAANJDAAAAAECBAAAAA
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPAAAAAAAAAAAAAAAAEIDAAAAALABAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True
 
@@ -1377,9 +1368,9 @@ IsFrameVisible=True
 ptn_Child1=ViewFrame-0
 
 [WorkState_v1_2.Frames.ChildFrames.Document-9.ViewFrame-0]
-DocPathName=port\porttimer.c
+DocPathName=port\portserial.c
 DocumentString=
 DocTemplateIndex=0
-WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPCDAAAAAACDAAAAAAGLDAAAAANDBAAAAA
+WindowPlacement=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPIPPPPPPPCOPPPPPPJBAAAAAAJBAAAAAANJDAAAAAECBAAAAA
 IsActiveChildFrame=False
 IsFrameVisible=True

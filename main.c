@@ -49,17 +49,17 @@ const uint8_t *FW_Ver = "0.1.0";
 #define REG_HOLDING_START 1
 #define REG_HOLDING_NREGS 100
 
-#define LED1_PIN GPIO_PIN_0
-#define LEDBEEP_PORT 	GPIOD
-#define LED2_PIN GPIO_PIN_1
-#define LED3_PIN GPIO_PIN_2
+#define LED1_PIN GPIO_PIN_6
+#define LEDBEEP_PORT 	GPIOC
+#define LED2_PIN GPIO_PIN_5
+#define LED3_PIN GPIO_PIN_4
 #define BEEP_PIN GPIO_PIN_3
 
 /* ----------------------- Static variables ---------------------------------*/
 static USHORT   usRegInputStart = REG_INPUT_START;
 static USHORT   usRegInputBuf[REG_INPUT_NREGS];
 static USHORT   usRegHoldingStart = REG_HOLDING_START;
-static USHORT   usRegHoldingBuf[REG_HOLDING_NREGS] = {1, 1, 1, 1, 1};
+static USHORT   usRegHoldingBuf[REG_HOLDING_NREGS] = {1, 1, 1, 1};
 
 static GPIO_Pin_TypeDef PIN[4] = {LED1_PIN, LED2_PIN, LED3_PIN, BEEP_PIN};
 
