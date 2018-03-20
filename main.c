@@ -53,15 +53,16 @@ const uint8_t *FW_Ver = "0.1.0";
 #define LEDBEEP_PORT 	GPIOC
 #define LED2_PIN GPIO_PIN_5
 #define LED3_PIN GPIO_PIN_4
-#define BEEP_PIN GPIO_PIN_3
+#define LED4_PIN GPIO_PIN_3
+#define BEEP_PIN GPIO_PIN_2
 
 /* ----------------------- Static variables ---------------------------------*/
 static USHORT   usRegInputStart = REG_INPUT_START;
 static USHORT   usRegInputBuf[REG_INPUT_NREGS];
 static USHORT   usRegHoldingStart = REG_HOLDING_START;
-static USHORT   usRegHoldingBuf[REG_HOLDING_NREGS] = {1, 1, 1, 1};
+static USHORT   usRegHoldingBuf[REG_HOLDING_NREGS] = {0, 0, 0, 0, 0};
 
-static GPIO_Pin_TypeDef PIN[4] = {LED1_PIN, LED2_PIN, LED3_PIN, BEEP_PIN};
+static GPIO_Pin_TypeDef PIN[5] = {LED1_PIN, LED2_PIN, LED3_PIN, LED4_PIN, BEEP_PIN};
 
 void main(void)
 {
@@ -102,7 +103,7 @@ void main(void)
     usRegInputBuf[2]=2;
     usRegInputBuf[3]=3;
 		
-		Alarmlight_Driver(usRegHoldingBuf, 4);
+		Alarmlight_Driver(usRegHoldingBuf, 5);
   
   }
 }
@@ -126,7 +127,7 @@ static void CLK_Config(void)
   */
 static void GPIO_Config(void)
 {
-	GPIO_Init(LEDBEEP_PORT, LED1_PIN | LED2_PIN | LED3_PIN | BEEP_PIN, GPIO_MODE_OUT_PP_LOW_SLOW);
+	GPIO_Init(LEDBEEP_PORT, LED1_PIN | LED2_PIN | LED3_PIN | LED4_PIN | BEEP_PIN, GPIO_MODE_OUT_PP_LOW_SLOW);
 }
 
 static void pin_output(uint16_t pin_index, bool io_state)
